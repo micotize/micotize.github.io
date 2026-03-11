@@ -1,0 +1,601 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Michele Coti Zelati</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #D8D8D8;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+table {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 3.5%;
+	padding-top:0;
+	margin-bottom: 0%;
+	font-size:14px;
+	width:95%;
+  border-collapse: collapse;
+}
+
+td, th,tr {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+.active {
+    color: #000;
+	text-decoration: none;
+}
+
+div#nav{
+	clear:both;
+	margin-left: 2.5%;
+	padding-top:0;
+	margin-bottom: 2.5%;
+	font-size:14px;
+	width:95%;
+}
+div#nav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D8D8D8;
+}
+div#nav li{
+	float: left;
+	width:33.33%;
+	margin-top:10px;
+	margin-bottom:10px;
+	display:inline-block;
+	text-align:center;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+
+li.one {
+	 margin-bottom: -10px;
+	 margin-left: 6.25%;
+	 margin-right: 3.75%;
+	 font-size: 12px;
+	 font-weight:bold;}
+li.one span {font-weight:normal;}
+
+li.two {
+	 margin-bottom: -10px;
+	 margin-left: 6.25%;
+	 margin-right: 3.75%;
+	 font-size: 12px;}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a.one:link {
+	color: #000;
+	font-size: 12px;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a.two:link {
+	color: #DF7401;
+	font-size: 12px;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a.one:visited {
+	color: #000;
+	text-decoration: underline;
+}
+
+a.two:visited {
+	color: #DF7401;
+	text-decoration: underline;
+}
+
+a.three:link {
+	color: #848484;
+	font-size: 14px;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a.three:visited {
+	color: #848484;
+	text-decoration: none;
+}
+a.three:hover { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #585858;
+}
+
+a.three:active { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #000;
+}
+
+a.three:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #000;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #D8D8D8;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+
+	padding: 20px 0;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.style1 {
+	font-size: 30px;
+	color: #DF7401;}
+	
+.style2 {font-size: 14px;
+	color: #BDBDBD;}
+
+.style3 {
+	font-weight: bold;
+	font-size: 14px;}
+
+.style4 {font-size: 12px;
+	color: #000;}
+	
+.style4bis {font-size: 12px;
+	color: #FFFFFF;}
+	
+.style5 {font-size: 12px;
+	color: #DF7401;}
+
+.style6 {font-size: 18px;
+	color: #DF7401;}
+	
+p.ex {
+    margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+#myDIV {
+  width: 80%;
+  padding: 10px 10px 10px;
+  background-color: #D8D8D8;
+    margin-left: 15%;
+		margin-top: 1%;
+}		
+-->
+</style></head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <p>
+    </p>
+  </div>
+  
+  <div class="content">
+    <section>
+    <p class="ex">
+    <a class="style1">Applied PDEs Seminar <IMG src="Pics/ICLlogo.png" width="65" height="65" align="right"></a><br>
+    <a class="style2">Imperial College London</a>
+    </p>
+	</section>
+
+<section>
+
+
+</section>
+
+
+
+<section>
+	    <p class="ex">
+      <a class="style4">Unless otherwise specified, the Applied PDEs Seminar takes place on <strong>Fridays at 3:00pm</strong> online. <br>
+			For further information contact</a> <a class="two" href="index.html">Michele Coti Zelati</a><a class="style4">, </a>
+			<a class="two" href="https://www.imperial.ac.uk/people/a.giunti">Arianna Giunti</a><a class="style4"><a class="style4">, or</a>
+			<a class="two" href="https://www.mimuw.edu.pl/~ekami">Ewelina Zatorska</a><a class="style4"><a class="style4">.</a>
+    </p>
+</section>
+
+
+<section>
+	    <p class="ex">
+			<a class="style5"><strong>TERM 2</strong></a>
+			<hr width="95%">
+    </p>
+</section>
+
+
+<section>
+ 
+		<a class="style4">&emsp; &emsp;  &ensp; 15/01/2020 &emsp; &emsp; <strong>Francesco Fanelli</strong> (Université de Lyon)  </a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 09/10/2020 &emsp; &emsp;</a> <a class="style4"><i>Statistical solutions to the barotropic Navier-Stokes equations</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">In this talk we are concerned with the notion of statistical solutions to some models of fluid mechanics,
+with a special focus on the barotropic Navier-Stokes equations.
+Statistical solutions in fluid mechanics were introduced in the pioneering works of Foias-Prodi and
+Vishik-Fursikov for the incompressible Navier-Stokes system. In the first part of the talk, we propose a
+new concept of statistical solutions for the compressible system. The leading idea is to define a statistical
+solution as the push-forward measure of the initial probability distribution on the space of data of the
+Navier-Stokes system. In order for this notion to be well-defined, we need a sort of uniqueness of trajectories
+emanating from a fixed initial datum: this property is guaranteed by a semiflow selection procedure, in
+the spirit of Krylov and Cardona-Kapitanskii.
+In the second part of the talk, we focus on the special class of stationary statistical solutions. In
+particular, we explore their role in the investigation of the validity of the so-called ergodic hypothesis in
+the context of the barotropic Navier-Stokes equations.
+This talk is based on joint works with Eduard Feireisl (Czech Academy of Sciences) and Martina
+Hofmanová (Universität Bielefeld).
+				</a>         
+		</div>
+ 
+ 
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 22/01/2020 &emsp; &emsp; <strong>Elisa Davoli</strong> (TU Wien)  </a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 22/01/2020 &emsp; &emsp; </a><a class="style4"><i>TBA</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">TBA
+				</a>         
+		</div>
+
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 29/01/2020 &emsp; &emsp; <strong>Manuel Gnann</strong> (TU Delft)   </a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 29/01/2020 &emsp; &emsp; </a><a class="style4"><i>Droplet spreading influenced by thermal noise</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">We consider a stochastic fourth-order degenerate-parabolic PDE describing the spreading of viscous thin
+				films under the influence of thermal fluctuations. This equation has been suggested in the physical literature approximately
+				15 years ago independently by Davidovitch, Moro and Stone, and by Grün, Mecke and Rauscher. In this talk, we demonstrate how weak
+				(martingale) solutions can be constructed in the case of linear and nonlinear gradient noise. Key ingredients are (combined)
+				energy and entropy estimates in conjunction with a tailor-made approximation procedure in order to control the formation of shocks.
+<br>
+The talk is based on joint works with Konstantinos Dareiotis (University of Leeds), Benjamin Gess (Bielefeld University and Max Planck Institute, Leipzig)
+and Günther Grün (University of Erlangen-Nuremberg).
+				</a>         
+		</div>		
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 05/02/2020 &emsp; &emsp; <strong>Robin Neumayer</strong> (Northwestern University)  </a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>TBA</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">TBA
+				</a>         
+		</div>		
+
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 12/02/2020 &emsp; &emsp; <strong>Alberto Chiarini</strong> (Eindhoven University of Technology)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>TBA</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>			
+		<div id="myDIV", style="display:none;">
+				<a class="style4">TBA
+				</a>         
+		</div>
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 19/02/2020 &emsp; &emsp; <strong>Steinar Evje</strong> (University of Stavanger)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>TBA</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">TBA
+				</a>         
+		</div>
+
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 26/02/2020 &emsp; &emsp; <strong>Evan Miller</strong> (McMaster University)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>TBA</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>			
+		<div id="myDIV", style="display:none;">
+				<a class="style4">TBA
+				</a>         
+		</div>
+		
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 05/03/2020 &emsp; &emsp; <strong>Alessia Nota</strong> (Università degli Studi dell'Aquila)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>TBA</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">TBA
+				</a>         
+		</div>		
+		
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 12/03/2020 &emsp; &emsp; <strong>Michela Ottobre</strong> (Heriot Watt University)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>TBA</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">TBA
+				</a>         
+		</div>
+
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 19/02/2020 &emsp; &emsp; <strong>Donatella Donatelli</strong> (Università degli Studi dell'Aquila)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>TBA</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">TBA
+				</a>         
+		</div>		
+		
+</section>
+
+
+<br>
+
+
+
+<section>
+	    <p class="ex">
+			<a class="style5"><strong>TERM 1</strong></a>
+			<hr width="95%">
+    </p>
+</section>
+
+
+<section>
+ 
+		<a class="style4">&emsp; &emsp;  &ensp; 09/10/2020 &emsp; &emsp; <strong>Yao Yao</strong> (Georgia Tech)  </a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 09/10/2020 &emsp; &emsp;</a> <a class="style4"><i>Radial symmetry of stationary and uniformly-rotating solutions in 2D incompressible fluid equations</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">In this talk, I will discuss some results on radial symmetry property for stationary and uniformly-rotating solutions
+					for the 2D Euler and SQG equation, where we aim to answer the question whether every stationary/uniformly-rotating
+					solution must be radially symmetric, if the vorticity is compactly supported. This is a joint work with Javier
+					Gómez-Serrano, Jaemin Park and Jia Shi.
+				</a>         
+		</div>
+ 
+ 
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 16/10/2020 &emsp; &emsp; <strong>Hans Knuepfer</strong> (Universität Heidelberg)  </a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 16/10/2020 &emsp; &emsp; </a><a class="style4"><i>Gamma-limit for zigzag domain walls in thin ferromagnetic films</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">Charged domain walls are a type of transition layers in thin ferromagnetic films which appear due to global topological constraints.
+				The underlying micromagnetic energy is determined by a competition between a diffuse interface energy and the long-range magnetostatic interaction.
+				The underlying model is non-convex and vectorial. In the macroscopic limit we show that the  energy Gamma--converges to a limit model where jump
+				discontinuities of the magnetization are penalized anisotropically. In particular, we identify a supercritical regime which allows for tangential
+				variation of the domain walls. 
+				</a>         
+		</div>
+
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 23/10/2020 &emsp; &emsp; <strong>Martina Hofmanova</strong> (Universität Bielefeld)   </a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 16/10/2020 &emsp; &emsp; </a><a class="style4"><i>Non-uniqueness in law of stochastic 3D Navier-Stokes equations</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">We consider the  stochastic Navier--Stokes equations in three dimensions and prove that the law of analytically weak solutions is not unique.
+				In particular, we focus on two iconic examples of a stochastic perturbation: either an additive or a linear multiplicative noise driven by a Wiener process.
+				In both cases, we develop a stochastic counterpart of the convex integration method  introduced recently by Buckmaster and Vicol. This permits to construct
+				probabilistically strong and analytically weak solutions defined up to a suitable stopping time. In addition, these solutions fail the corresponding energy
+				inequality at a prescribed time with a prescribed probability. Then we introduce a general probabilistic construction used to extend the convex integration
+				solutions beyond the stopping time and in particular to the whole time interval [0,&#8734;). Finally, we show that their law is distinct from the law of
+				solutions obtained by Galerkin approximation. In particular, non-uniqueness in law holds on an arbitrary time interval [0,T], T>0.
+				</a>         
+		</div>		
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 30/10/2020 &emsp; &emsp; <strong>Weiren Zhao</strong> (NYU Abu Dhabi) [Different time: 10:00am]   </a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>Stability of the Couette flow for 2D Navier-Stokes Boussinesq system</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">In this talk, I will talk about the stability of Couette flow for 2D Navier-Stokes Boussinesq system
+				without thermal diffusivity for the initial perturbation in Gevrey-3-. The synergism of density mixing, vorticity mixing
+				and velocity diffusion leads to the stability. This is a joint work with Masmoudi and Said-Houari.
+				</a>         
+		</div>		
+
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 06/11/2020 &emsp; &emsp; <strong>Jessica Lin</strong> (McGill University)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>Homogenization of an Allen-Cahn Equation in Periodic Media</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>			
+		<div id="myDIV", style="display:none;">
+				<a class="style4">I will discuss periodic homogenization for the Allen-Cahn equation with Neumann boundary conditions. It is well-known that rescaled solutions
+				of the (homogeneous) Allen-Cahn equation converge to generalized solutions of mean-curvature flow. Using a variational approach, I will show that under suitable
+				hypotheses, a similar result holds true for Allen-Cahn equations with periodic reaction terms. This talk is based on joint work with Rustum Choksi, Irene Fonseca,
+				and Raghavendra Venkatraman. 
+				</a>         
+		</div>
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 13/11/2020 &emsp; &emsp; <strong>Luc Rey-Bellet</strong> (University of Massachusetts)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>Variational representation and concentration inequalities for uncertainty quantification</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">We use variational representation for information-theoretic divergences (such as the KL-divergences) and concentration inequalities to derive, in a
+				systematic way, tight information inequalities.   A central question in uncertainty quantification and statistical learning is how to choose the right divergences
+				for the right quantity of interest.  We concentrate on KL-divergence, f-divergences, and Renyi divergences and discuss several examples:
+				expected values,  variance and other functionals, rare events, and  steady state expectation for MCMC dynamics (for example Hamiltonian Monte-Carlo). 
+				</a>         
+		</div>
+
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 20/11/2020 &emsp; &emsp; <strong>Maria G. Westdickenberg</strong> (RWTH Aachen University)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>Two approaches to optimal convergence rates for (mildly) nonconvex gradient flows</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>			
+		<div id="myDIV", style="display:none;">
+				<a class="style4">We are interested in understanding the evolution in time of gradient flows with respect to nonconvex energies and ``poorly prepared'' initial data. We recall the
+				algebraic in time convergence rates for convex (but not strictly convex) energies and then consider adapting the ideas for the nonconvex case. We illustrate two different frameworks
+				with examples. On the one hand, we study the HED method for the Mullins-Sekerka evolution in two space dimensions. On the other hand, we consider an L1 framework for the Cahn Hilliard
+				equation in one space dimension.
+				</a>         
+		</div>
+		
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 27/11/2020 &emsp; &emsp; <strong>Cosmin Burtea</strong> (Université Paris Diderot)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>Existence of weak solutions for the Navier-Stokes system for stationary anisotropic compressible flows</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">When dealing with PDEs coming from fluid mechanics, bounded-energy weak
+solutions are, in many cases, the only type of solutions for which one can
+guarantee existence without imposing any restriction on the size of the
+initial data or forcing terms. Understanding how to construct such solutions
+is also important for designing stable numerical schemes. In order to construct
+weak-solutions, one usually considers some parabolic/elliptic
+regularization of the initial system for which well-posedness follows by
+standard functional analysis techniques and hopes that the limiting object, as
+the regularizing parameters tend to zero, is a solution for the initial
+system. In the context of compressible flows, the energy functional does not
+provide any regularity information for the density of the fluid such that
+passing to the limit in nonlinear terms, such as the pressure which is a
+genuine non-linear function of the density, raises some important difficulties. <br><br>
+ 
+In this talk we discuss the problem of constructing weak-solutions for the
+stationary Navier-Stokes system for a barotropic compressible fluid with an
+anisotropic and/or non-local viscous stress tensor. The key ingredient is a
+new identity that we obtain by proceeding as follows. Given a
+sequence of weak-solutions we take a look at the limit of the equations of the
+associated energies. From the limiting equation we subtract the equation of
+the energy associated to the system verified by the limit of the
+aforementioned sequence of weak-solutions. It turns out that the resulting
+expression can be used to recover strong convergence in L2 for the sequence of
+velocity gradients.  A posteori we recover strong convergence for the
+corresponding sequence of densities. The results that will be presented are
+obtained in collaboration with D. Bresch.
+				</a>         
+		</div>		
+		
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 04/12/2020 &emsp; &emsp; <strong>Arianna Giunti</strong> (Imperial College London)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>Homogenization in randomly punctured domains</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">In this talk we discuss some results concerning the homogenization of solutions to a Stokes system in a domain
+				having many small random holes. The main application for these models arises from the study of the flow of a viscous incompressible
+				fluid through a porous medium or in the quasi-static regime of sedimenting particles. Our main focus is the rigorous derivation of
+				the homogenization limit and the quantification of the convergence to the effective problem. In particular, we are interested in the
+				case in which the holes in the domain under consideration are randomly distributed and may give rise to complicated geometries by
+				overlapping and concentrating in certain regions of the domain. 
+				</a>         
+		</div>
+
+
+ <br>
+		<a class="style4">&emsp; &emsp;  &ensp; 11/12/2020 &emsp; &emsp; <strong>Gero Friesecke</strong> (Technische Universität München)</a><br>
+		<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a><a class="style4"><i>High-dimensional quantum wavefunctions, optimal transport, and tensor networks</i> </a><br>
+
+<a class="style4bis">&emsp; &emsp;  &ensp; 00/00/0000 &emsp; &emsp; </a> <button type="button" class="collapsible" >Abstract</button>		
+		<div id="myDIV", style="display:none;">
+				<a class="style4">PDEs from many-body physics (be it the kinetic
+Fokker-Planck equation governing  molecular dynamics or the electronic
+Schr"odinger equation governing electronic structure) suffer from the
+curse of dimension. If the single-particle state space is discretized by
+L gridponts or basis functions, optimal (or candidate) solutions require
+L^N gridpoint values or coefficients. <br>
+      Many semi-empirical schemes are being tried, often centered around
+some clever ansatz to parametrize high-dimensional functions. In this
+talk I pursue the following fundamental but poorly understood question:
+what, if anything, is known about the possiblity of really  breaking the
+curse of dimension in such systems? <br>
+      I present <br>
+- rigorous work with Daniela Voegler (SIAM J. Math. Anal. 50 (4),
+3996-4019, 2018) where we discovered a low-dimensional ansatz manifold
+for the strictly correlated limit of the electronic Schroedinger
+equation. The limit is a high-dimensional optimal transport problem and
+the manifold contains the exact minimizers and breaks the curse. <br>
+- first results with Mi-Song Dupuy (SIAM J. Sci. Comp., to appear, 2020)
+which indicate that sparse tensor factorizations via tensor trains or
+tensor networks may not be enough unless combined with systematic
+optimization (''learning'') of the network.
+				</a>         
+		</div>		
+		
+</section>
+
+<hr width="95%">
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+  <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>
